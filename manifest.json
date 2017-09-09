@@ -3,7 +3,7 @@
     "name": "blankify",
     "version": "1.0",
     
-    "description": "Adds a browser action to the toolbar. Click the button to choose a beast. The active tab's body content is then removed.",
+    "description": "Adds a browser action to the toolbar. Click the button to remove the active tab's content.",
     "homepage_url": "https://github.com/acoomes/blankify",
     "icons": {
         "48": "icons/blankify-48.png"
