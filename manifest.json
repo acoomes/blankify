@@ -5,6 +5,7 @@
     
     "description": "Adds a browser action to the toolbar. Click the button to remove the active tab's content.",
     "homepage_url": "https://github.com/acoomes/blankify",
+
     "icons": {
         "48": "icons/blankify-48.png"
     },
@@ -16,5 +17,9 @@
     "browser_action": {
         "default_icon": "icons/blankify-48.png",
         "default_title": "Blankify"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
     }
 }
