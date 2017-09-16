@@ -1,16 +1,11 @@
-/* 
-Remove every node under document.body.
- */
-function blankify() {
-    browser.tabs.create({
-        url: "https://developer.mozilla.org"
+// Run blankify.js.
+function runBlankify() {
+    browser.tabs.executeScript(null, {
+        file: "/content_scripts/blankify.js"
     });
-    while(document.body.firstChild) {
-        document.body.firstChild.remove();
-    }
 }
 
 /* 
-Assign blankify() as a listener for clicks on the browser action.
+When the browser action is clicked, run blankify.
  */
-browser.browserAction.onClicked.addListener(blankify);
+browser.browserAction.onClicked.addListener(runBlankify);
